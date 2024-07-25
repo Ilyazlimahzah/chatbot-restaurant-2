@@ -20,7 +20,7 @@ socket.on('bot message', (message) => {
   } else {
     message.text = message.text;
   }
-  outputMessage("Saheed's ChatBot", message);
+  outputMessage("Fawaz's ChatBot", message);
 
   // Scroll down
   chatMessages.scrollTop = chatMessages.scrollHeight;
@@ -59,7 +59,7 @@ chatForm.addEventListener('submit', (e) => {
 const outputMessage = (sender, message) => {
   const div = document.createElement('div');
   div.classList.add('chat-messages');
-  if (sender === "Saheed's ChatBot") {
+  if (sender === "Fawaz's ChatBot") {
     div.classList.add('bot');
   } else {
     div.classList.add('user');
